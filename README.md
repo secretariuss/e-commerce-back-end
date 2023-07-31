@@ -6,13 +6,17 @@ I WANT a back end for my e-commerce website that uses the latest technologies
 SO THAT my company can compete with other e-commerce companies
 
 ## Description
- Employye Tracker starts from command-line application that accepts user input. User starts answer for questions and enter information in terminal prompt mode, as a view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role. This information is added to the sections. In the end user can see all nessesary info in terminal.  
+E-commerce Back End starts from command-line application.
+User can view all products, categories, product tags. 
+User can create products, tags and categories. 
+User can update products, tags and categories.
+User can delete products, tags and categories.
 
 ## Github reference
 https://github.com/secretariuss/e-commerce-back-end
 
 ## Video reference
-https://drive.google.com/file/d/1aEHG0e2m7Ndf_jn_oMwxeBKLYIrNbSVt/view
+https://drive.google.com/file/d/1A5Ykl1E4AG4TH1to843Q8ai92qAMSGQx/view
 
 ## Screen shots
 
@@ -44,7 +48,7 @@ THEN I am able to successfully create, update, and delete data in my database
   ## Installation
   Use in the terminal, clone from github, run npm install
   ## Usage
-  run in terminal npm run start
+  run in terminal - npm run seed, then - npm run start
   ## How to Contribute
   [Contributor Covenant](https://www.contributor-covenant.org/)  
   In contributor covenant
