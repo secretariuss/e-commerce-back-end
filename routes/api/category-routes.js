@@ -20,9 +20,20 @@ router.get("/", async (req, res) => {
     });
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
+  await Category.findByPk(req.params.id, {
+    include: {
+      model: Product,
+      attributes: ["id", "product_name", "price", "stock", "category_id"],
+    },
+  })
+    .then((category) => res.json(category))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 router.post("/", (req, res) => {
